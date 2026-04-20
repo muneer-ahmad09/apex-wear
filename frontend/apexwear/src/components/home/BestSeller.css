@@ -1,0 +1,101 @@
+.best-seller{
+background-color: var(--bg);
+padding: 1rem 8%;
+text-align: left;
+}
+
+.best-seller-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best-seller-list{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.best-seller-heading{
+    font-size: 2.5rem;
+    color: var(--primary-text);
+    margin: 0;
+}
+
+.best-seller-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* items bigger, offer smaller */
+  gap: 2rem;
+}
+
+.offer-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden; /* important */
+}
+
+.offer-card img {
+  width: 100%;
+  height: 100%;        
+  object-fit: cover;   
+  display: block;
+}
+
+.offer-content{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.offer-title{
+    font-size: 2.5rem;
+    color: var(--primary-text);
+    margin: 0.5rem 0;
+}
+.offer-discount{
+    font-size: 3.5rem;
+    color: var(--accent);
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.offer-subtitle{
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    margin: 0.5rem 0;
+}
+.offer-description{
+    font-size: 0.875rem;
+    color: var(--secondary-text);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+}
+
+.offer-btn{
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-text);
+    color: var(--bg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .best-seller{
+        padding: 1rem 4%;
+    }
+  .best-seller-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .items-container {
+    overflow-x: auto; /* optional: horizontal scroll */
+  }
+}

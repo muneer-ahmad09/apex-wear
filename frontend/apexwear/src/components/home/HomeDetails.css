@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 1rem 8%;
+  text-align: left;
+}
+
+.return-details,
+.quality-details,
+.order-details,
+.payment-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon{
+    font-size: 2.7rem;
+    color: var(--accent);
+    margin-right: 1rem;
+}
+.quality-details-text,
+.return-details-text,
+.payment-details-text,
+.order-details-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.divider {
+  width: 1px;
+  background-color: var(--border);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .return-details,
+  .quality-details,
+  .order-details,
+  .payment-details {
+    flex-direction: column;   /* 🔥 stack icon above text */
+    align-items: center;      /* 🔥 center everything */
+    text-align: center;
+  }
+
+  .icon {
+    margin-right: 0;
+    margin-bottom: 0.5rem;    /* space between icon & text */
+  }
+
+  .quality-details-text,
+  .return-details-text,
+  .payment-details-text,
+  .order-details-text {
+    align-items: center;      /* 🔥 center text block */
+  }
+
+  .divider {
+    width: 60%;               /* optional: make divider horizontal */
+    height: 1px;
+  }
+}

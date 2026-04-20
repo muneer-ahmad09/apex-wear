@@ -1,0 +1,63 @@
+.item-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 180px;
+}
+
+.price-container {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--secondary-text);
+}
+
+.final-price {
+  color: var(--primary-text);
+  font-weight: 500;
+}
+
+.item-card-title {
+  font-size: 18px;
+  color: var(--primary-text);
+  margin: 0.3rem 0;
+}
+
+.item-card-subtitle {
+  font-size: 14px;
+  color: var(--secondary-text);
+}
+
+.card-rating {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--primary-text);
+}
+
+.rating-icon {
+  color: var(--accent);
+}
+
+.wishlist-icon-container {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  background-color: rgba(86, 86, 86, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.heart-icon {
+  color: var(--accent);
+  font-size: 1rem;
+}

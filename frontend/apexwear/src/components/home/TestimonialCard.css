@@ -1,0 +1,19 @@
+.testimonial-card {
+    display: flex;
+    flex-direction: column;   /* ✅ correct — stacks content inside the card */
+    align-items: center;
+    gap: 0.5rem;
+
+    /* ✅ Add these: */
+    flex: 1;                  /* each card grows equally to fill the row */
+    min-width: 220px;         /* prevents cards from becoming too narrow before wrapping */
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.testimonial-card .card-rating {
+    font-size: 1.2rem;        /* ✅ 0.6rem was way too small — stars were nearly invisible */
+    color: #f5a623;           /* optional: gold stars */
+    display: flex;
+    gap: 0.2rem;
+}
