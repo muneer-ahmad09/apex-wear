@@ -9,12 +9,9 @@
   --accent: #C6FF00;
   --accent-bg: rgba(198, 255, 0, 0.1);
   --accent-border: rgba(198, 255, 0, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
+  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
   --heading: "Bebas Neue", sans-serif;
   --body: "Inter", sans-serif;
-
 
   font: 18px/145% var(--body);
   letter-spacing: 0.18px;
@@ -25,15 +22,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
 }
 
-
 #root {
-  /* width: 1126px; */
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -49,8 +40,11 @@ body {
   background: var(--secondary-bg);
 }
 
-h1,
-h2 {
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--primary-text);
@@ -60,27 +54,30 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
 }
+
 h2 {
   font-size: 24px;
   line-height: 118%;
   letter-spacing: -0.24px;
   margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
 }
+
 p {
   margin: 0;
   font-family: var(--body);
   color: var(--secondary-text);
 }
 
-* {
-  box-sizing: border-box;
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  h2 {
+    font-size: 20px;
+  }
 }
-
